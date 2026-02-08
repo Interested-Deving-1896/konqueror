@@ -824,6 +824,14 @@ void WebEnginePage::printFrame(QWebEngineFrame frame)
 }
 #endif
 
+void WebEnginePage::assumingNewWindowRequestsAreUserInitiated(const std::function<void ()>& fnc)
+{
+    bool old = m_assumeNewWindowRequestsUserInitiated;
+    m_assumeNewWindowRequestsUserInitiated = true;
+    fnc();
+    m_assumeNewWindowRequestsUserInitiated = old;
+}
+
 void WebEnginePage::createNewWindow(QWebEngineNewWindowRequest& req)
 {
     if (m_dropOperationTimer->isActive()) {
@@ -849,7 +857,7 @@ void WebEnginePage::createNewWindow(QWebEngineNewWindowRequest& req)
 
     KParts::OpenUrlArguments args;
     args.setMimeType(QL1S("text/html"));
-    args.setActionRequestedByUser(req.isUserInitiated());
+    args.setActionRequestedByUser(m_assumeNewWindowRequestsUserInitiated || req.isUserInitiated());
 
     WindowArgs wargs;
     wargs.setX(req.requestedGeometry().x());

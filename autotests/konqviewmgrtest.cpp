@@ -176,6 +176,9 @@ void ViewMgrTest::initTestCase()
     QDir(configLocationDir).remove("konquerorrc");
 
     KonqSessionManager::self()->disableAutosave();
+
+
+    Konq::Settings::self()->config()->reparseConfiguration();
     QCOMPARE(Konq::Settings::mmbOpensTab(), true);
     QCOMPARE(Konq::Settings::popupsWithinTabs(), false);
     Konq::Settings::setAlwaysHavePreloaded(false); // it would confuse the mainwindow counting
@@ -423,6 +426,28 @@ static void openHtmlWithLink(KonqMainWindow &mainWindow)
     QCOMPARE(view->type().mimetype().value(), QString("text/html"));
 }
 
+bool ViewMgrTest::simulateClick(WebEnginePart* part, Qt::MouseButton btn, Qt::KeyboardModifiers modifiers, int timeout)
+{
+    const QHash<Qt::MouseButton, int> btnNumbers{{Qt::LeftButton, 0}, {Qt::MiddleButton, 1}, {Qt::RightButton, 2}};
+
+    const QHash<Qt::KeyboardModifier, QString> modStrings {
+        {Qt::ControlModifier, QStringLiteral("'ctrl'")},
+        {Qt::AltModifier, QStringLiteral("'alt'")},
+        {Qt::ShiftModifier, QStringLiteral("'shift'")}
+    };
+    QStringList stringModifiers;
+    for (auto [mod, str] : modStrings.asKeyValueRange()) {
+        if (modifiers & mod) {
+            stringModifiers.append(str);
+        }
+    }
+
+    QString js = QStringLiteral("simulateClick('linkid', %1, [%2])").arg(btnNumbers.value(btn, 0)).arg(stringModifiers.join(','));
+    bool jsRun = false;
+    part->view()->page()->runJavaScript(js, [&jsRun](const QVariant &){jsRun = true;});
+    return QTest::qWaitFor([jsRun]{return jsRun;}, timeout);
+}
+
 void ViewMgrTest::testLinkedViews()
 {
     KonqMainWindow mainWindow;
@@ -446,11 +471,7 @@ void ViewMgrTest::testLinkedViews()
     view2->setLinkedView(true);
     view->setLockedLocation(true);
 
-    // "Click" on the link
-    qDebug() << "ACTIVATING LINK";
-
-    QTest::mouseClick(part->view()->focusProxy(), Qt::LeftButton, Qt::KeyboardModifiers(),
-            elementCenter(part->view()->page(), QStringLiteral("linkid")));
+    simulateClick(part, Qt::LeftButton, {});
 
     // Check that the link opened in the 2nd view, not the first one
     QCOMPARE(view->url().url(), origUrl.url());
@@ -515,25 +536,11 @@ void ViewMgrTest::testCtrlClickOnLink()
     WebEnginePart *part = qobject_cast<WebEnginePart*>(view->part());
     QVERIFY(part);
 
-    //To simulate a mouse click, we need to know the coordinates of the <a> element, which we get
-    //using javascript. We use the javascript function getLinkCoordinates() defined in the html
-    //page to get the coordinates. In the callback function, we then simulate a mouse click in that
-    //position.
-    //We use QTest::qWaitFor to wait until either a new tab has been opened in the main window or a
-    //new main window has been created (one of the two possbile successful outcomes of this test), then
-    //proceed with testing the results
-    auto simulateClick = [part](const QVariant &var) {
-        if (!var.isValid()) {
-            return;
-        }
-        QVariantList lst = var.toList();
-        QPoint pt{lst.at(0).toInt(), lst.at(1).toInt()};
-        //For some reason, mouse events delivered to QWebEngineView don't work: they need to be delivered
-        //to a child widget of the QWebEngineView
-        QTest::mouseClick(part->view()->findChild<QWidget*>(), Qt::LeftButton, Qt::ControlModifier, pt);
-    };
-    part->page()->runJavaScript("getLinkCoordinates()", 0, simulateClick);
-    bool waitSuccessful = QTest::qWaitFor([&mainWindow]{return mainWindow.tabsCount() > 1 || KMainWindow::memberList().count() > 1;}, 1000);
+    bool waitSuccessful = false;
+    part->page()->assumingNewWindowRequestsAreUserInitiated([&mainWindow, part, &waitSuccessful] {
+        simulateClick(part, Qt::LeftButton, Qt::ControlModifier);
+        waitSuccessful = QTest::qWaitFor([&mainWindow]{return mainWindow.tabsCount() > 1 || KMainWindow::memberList().count() > 1;}, 1000);
+    });
     QVERIFY2(waitSuccessful, "Link wasn't opened");
 
     KonqView *newView = nullptr;

@@ -67,23 +67,4 @@ static inline QVariant evaluateJavaScriptSync(QWebEnginePage *page, const QStrin
     page->runJavaScript(script, spy.ref());
     return spy.waitForResult();
 }
-
-// Taken from QtWebEngine's tst_qwebenginepage.cpp
-static QPoint elementCenter(QWebEnginePage *page, const QString &id)
-{
-    QVariantList rectList = evaluateJavaScriptSync(page,
-            "(function(){"
-            "var elem = document.getElementById('" + id + "');"
-            "var rect = elem.getBoundingClientRect();"
-            "return [rect.left, rect.top, rect.right - rect.left, rect.bottom - rect.top];"
-            "})()").toList();
-
-    if (rectList.count() != 4) {
-        qWarning("elementCenter failed.");
-        return QPoint();
-    }
-    const QRect rect(rectList.at(0).toInt(), rectList.at(1).toInt(),
-                     rectList.at(2).toInt(), rectList.at(3).toInt());
-    return rect.center();
-}
 #endif

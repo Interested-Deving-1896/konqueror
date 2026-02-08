@@ -16,8 +16,9 @@
 #include "browserextension.h"
 #include "webenginepartdownloadmanager.h"
 
-#include <QWebEnginePage>
+#include <kwebenginepartlib_export.h>
 
+#include <QWebEnginePage>
 #include <QUrl>
 #include <QMultiHash>
 #include <QPointer>
@@ -35,7 +36,7 @@ class WebEngineWallet;
 class WebEngineDownloadJob;
 class WebEnginePartControls;
 
-class WebEnginePage : public QWebEnginePage
+class KWEBENGINEPARTLIB_EXPORT  WebEnginePage : public QWebEnginePage
 {
     Q_OBJECT
 public:
@@ -87,6 +88,17 @@ public:
     static bool allowLifeycleStateManagement(bool allow);
 
     QWidget* view() const;
+
+    /**
+     * @brief Execute a function considering all requests to open new windows as being user-initiated
+     *
+     * @warning This function should *only be used from tests* when the only way of clicking on links is
+     * using javascript, which makes WebEnginePage consider them not being user-initiated.
+     *
+     * @param fnc the function to execute while considering all requests to open new window to be user-initiated
+     * @see
+     */
+    void assumingNewWindowRequestsAreUserInitiated(const std::function<void()> &fnc);
 
 Q_SIGNALS:
     /**
@@ -230,6 +242,17 @@ private:
      * page is loading
      */
     QWebEngineLoadingInfo::LoadStatus m_loadStatus;
+
+    /**
+     * @brief Makes createNewWindow() behave as requests to create new windows are always user-initiated
+     *
+     * @warning This should only used in tests
+     * @warning This variable should only be set by assumingNewWindowRequestsAreUserInitiated()
+     *
+     * When this is true, createNewWindow() behaves as if `QWebEngineNewWindowRequest::isUserInitiated()`
+     * returned `true`
+     */
+    bool m_assumeNewWindowRequestsUserInitiated = false;
 };
 
 #endif // WEBENGINEPAGE_H
