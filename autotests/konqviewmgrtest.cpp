@@ -155,19 +155,8 @@ private:
     QString m_output;
 };
 
-void ViewMgrTest::initTestCase()
+void ViewMgrTest::resetSettings()
 {
-    QStandardPaths::setTestModeEnabled(true);
-
-    WebEnginePartControls::self()->disablePageLifecycleStateManagement();
-    KLocalizedString::setApplicationDomain("konqviewmgrtest");
-
-    qApp->setProperty("browser", QVariant::fromValue(new KonqBrowser(qApp)));
-
-    QWebEngineSettings *settings = WebEnginePart::defaultProfile()->settings();
-    settings->setAttribute(QWebEngineSettings::LocalContentCanAccessRemoteUrls, true);
-    settings->setAttribute(QWebEngineSettings::LocalContentCanAccessFileUrls, true);
-
     QDir(KonqSessionManager::self()->autosaveDirectory()).removeRecursively();
     QString configLocationDir = QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation);
     const QLatin1String expConfigDir(".qttest/config");
@@ -176,7 +165,6 @@ void ViewMgrTest::initTestCase()
     QDir(configLocationDir).remove("konquerorrc");
 
     KonqSessionManager::self()->disableAutosave();
-
 
     Konq::Settings::self()->config()->reparseConfiguration();
     QCOMPARE(Konq::Settings::mmbOpensTab(), true);
@@ -210,6 +198,25 @@ void ViewMgrTest::initTestCase()
         // kbuildsycoca is the one reading mimeapps.list, so we need to run it now
         QProcess::execute(QStandardPaths::findExecutable(KBUILDSYCOCA_EXENAME), {});
     }
+}
+
+void ViewMgrTest::initTestCase()
+{
+    QStandardPaths::setTestModeEnabled(true);
+    KLocalizedString::setApplicationDomain("konqviewmgrtest");
+    qApp->setProperty("browser", QVariant::fromValue(new KonqBrowser(qApp)));
+
+    WebEnginePartControls::self()->disablePageLifecycleStateManagement();
+
+    QWebEngineSettings *settings = WebEnginePart::defaultProfile()->settings();
+    settings->setAttribute(QWebEngineSettings::LocalContentCanAccessRemoteUrls, true);
+    settings->setAttribute(QWebEngineSettings::LocalContentCanAccessFileUrls, true);
+    resetSettings();
+}
+
+void ViewMgrTest::init()
+{
+    resetSettings();
 }
 
 void ViewMgrTest::testCreateFirstView()

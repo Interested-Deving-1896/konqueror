@@ -31,8 +31,11 @@ class ViewMgrTest : public QObject
      */
     static bool simulateClick(WebEnginePart *part, Qt::MouseButton btn = Qt::LeftButton, Qt::KeyboardModifiers modifiers = {}, int timeout = 500);
 
+    static void resetSettings();
+
 private Q_SLOTS:
     void initTestCase();
+    void init();
 
     void testCloseOtherTabs();
     void testCloseTabsFast();
