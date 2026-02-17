@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-01 00:42+0000\n"
-"PO-Revision-Date: 2026-01-20 16:18+0100\n"
+"PO-Revision-Date: 2026-02-16 11:52+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -111,7 +111,7 @@ msgstr ""
 "><ul><li><b>Habilitate</b>: Il Monstra omne animationes completemente.</"
 "li><li><b>Dishabilitate</b>: Il jammais monstra animationes, solmente il "
 "monstra le image initial.</li><li><b>Monstra solmente olim</b>: Il monstra "
-"omne animationes completemente ma il non repite los.</li></ul></html>"
+"omne animationes completemente ma il non repete los.</li></ul></html>"
 
 #: appearance.cpp:82
 #, kde-format

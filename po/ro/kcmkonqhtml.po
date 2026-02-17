@@ -1,12 +1,9 @@
 # Traducerea kcmkonqhtml.po în Română
-# translation of @PACKAGE.po to @LANGUAGE
 # translation of kcmkonqhtml.po to Romanian
 # Copyright (C) 2003, 2004, 2005, 2008 Free Software Foundation, Inc.
 # Claudiu Costin <claudiuc@kde.org>, 2002,2003, 2004, 2005.
-# Sergiu Bivol <sergiu@cip.md>, 2008.
-# Sergiu Bivol <sergiu@cip.md>, 2008, 2009.
+# SPDX-FileCopyrightText: 2008, 2009, 2010, 2012, 2013, 2014, 2020, 2024, 2026 Sergiu Bivol <sergiu@cip.md>
 # Laurenţiu Buzdugan <lbuz@rolix.org>, 2009.
-# Sergiu Bivol <sergiu@cip.md>, 2010, 2012, 2013, 2014, 2020, 2024.
 # Cristian Oneț <onet.cristian@gmail.com>, 2011, 2012.
 # Cristian Buzduga <cristianbzdg@gmail.com>, 2011.
 #
@@ -15,7 +12,7 @@ msgstr ""
 "Project-Id-Version: kcmkonqhtml\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-01 00:42+0000\n"
-"PO-Revision-Date: 2024-01-07 16:26+0000\n"
+"PO-Revision-Date: 2026-02-16 23:29+0000\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
 "Language: ro\n"
@@ -24,7 +21,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 25.08.1\n"
 
 #: appearance.cpp:39
 #, kde-format
@@ -670,19 +667,11 @@ msgstr "&Animații:"
 #: cookies/kcookiespolicies.ui:98
 #, kde-format
 msgid "Re&ject all cookies"
-msgstr ""
+msgstr "&Respinge toate cookie-urile"
 
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, gbDomainSpecific)
 #: cookies/kcookiespolicies.ui:123
-#, fuzzy, kde-format
-#| msgid ""
-#| "Here you can set specific Java policies for any particular host or "
-#| "domain. To add a new policy, simply click the <i>New...</i> button and "
-#| "supply the necessary information requested by the dialog box. To change "
-#| "an existing policy, click on the <i>Change...</i> button and choose the "
-#| "new policy from the policy dialog box. Clicking on the <i>Delete</i> "
-#| "button will remove the selected policy, causing the default policy "
-#| "setting to be used for that domain."
+#, kde-format
 msgid ""
 "<qt>\n"
 "To add a new policy, simply click on the <b>Add...</b> button and supply the "
@@ -693,33 +682,33 @@ msgid ""
 "All</b> will remove all the site specific policies.\n"
 "</qt>"
 msgstr ""
-"Aici puteți stabili politicile Java specifice unui domeniu sau gazde "
-"particulare. Pentru a adăuga o politică nouă, dați clic pe butonul <i>Nou..."
-"</i> și introduceți informațiile necesare cerute în căsuța de dialog. Pentru "
-"a modifica o politică existentă, dați clic pe butonul <i>Modifică...</i> și "
-"alegeți noua politică din dialogul de politică. Pentru a șterge politica "
-"selectată, dați clic pe butonul <i>Șterge</i>, astfel încît va fi utilizată "
-"politica implicită pentru acel domeniu."
+"<qt>\n"
+"Pentru a adăuga o politică nouă, apăsați butonul <b>Adaugă…</b> și "
+"introduceți informațiile necesare în caseta de dialog. Pentru a modifica o "
+"politică existentă, apăsați butonul <b>Modifică…</b> și alegeți noua "
+"politică din caseta de dialog cu politici. Dacă apăsați butonul <b>Șterge</"
+"b>, veți șterge politica aleasă, indicând utilizarea politicii implicite "
+"pentru acel domeniu, iar <b>Șterge tot</b> determină ștergerea tuturor "
+"politicilor specifice saitului.\n"
+"</qt>"
 
 #. i18n: ectx: property (title), widget (QGroupBox, gbDomainSpecific)
 #: cookies/kcookiespolicies.ui:126
-#, fuzzy, kde-format
-#| msgid "Policy"
+#, kde-format
 msgid "Site Policy"
-msgstr "Politică"
+msgstr "Politică sait"
 
 #. i18n: ectx: property (toolTip), widget (KTreeWidgetSearchLine, kListViewSearchLine)
 #: cookies/kcookiespolicies.ui:135
 #, kde-format
 msgid "Search interactively for domains"
-msgstr ""
+msgstr "Caută interactiv domenii"
 
 #. i18n: ectx: property (placeholderText), widget (KTreeWidgetSearchLine, kListViewSearchLine)
 #: cookies/kcookiespolicies.ui:138
-#, fuzzy, kde-format
-#| msgid "Search:"
+#, kde-format
 msgid "Search..."
-msgstr "Caută:"
+msgstr "Căutare…"
 
 #. i18n: ectx: property (whatsThis), widget (QTreeWidget, policyTreeWidget)
 #: cookies/kcookiespolicies.ui:147
@@ -730,13 +719,16 @@ msgid ""
 "policies override the default policy setting for these sites.\n"
 "</qt>"
 msgstr ""
+"<qt>\n"
+"Lista saiturilor pentru care ați stabilit o politică de cookie specifică. "
+"Politicile specifice suprascriu politica implicită pentru aceste saituri.\n"
+"</qt>"
 
 #. i18n: ectx: property (text), widget (QTreeWidget, policyTreeWidget)
 #: cookies/kcookiespolicies.ui:163
-#, fuzzy, kde-format
-#| msgid "Host/Domain"
+#, kde-format
 msgid "Domain"
-msgstr "Gazdă/Domeniu"
+msgstr "Domeniu"
 
 #. i18n: ectx: property (text), widget (QTreeWidget, policyTreeWidget)
 #: cookies/kcookiespolicies.ui:168 domainlistview.cpp:40
@@ -767,18 +759,23 @@ msgid ""
 "b> or <b>.kde.org</b>.\n"
 "</qt>"
 msgstr ""
+"<qt>Introduceți numele sait-ului sau domeniului pentru care doriți să "
+"aplicați această politică. De exemplu <b>www.kde.org</b> sau <b>.kde.org</b>."
+"</qt>"
 
 #. i18n: ectx: property (text), widget (QLabel, lbDomain)
 #: cookies/kcookiespolicyselectiondlg.ui:25
 #, kde-format
 msgid "Site name:"
-msgstr ""
+msgstr "Denumire sait:"
 
 #. i18n: ectx: property (whatsThis), widget (QLineEdit, leDomain)
 #: cookies/kcookiespolicyselectiondlg.ui:38
 #, kde-format
 msgid "Enter the host or domain name, e.g. .kde.org, this policy applies to."
 msgstr ""
+"Introduceți numele gazdei sau domeniului căruia i se aplică această "
+"politică, cum ar fi .kde.org."
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, lbPolicy)
 #. i18n: ectx: property (whatsThis), widget (QComboBox, cbPolicy)
@@ -797,13 +794,24 @@ msgid ""
 "</ul>\n"
 "</qt>"
 msgstr ""
+"<qt>\n"
+"Alegeți politica dorită:\n"
+"<ul>\n"
+"<li><b>Acceptă</b> – Permite acestui sait să stabilească cookie-uri.</li>\n"
+"<li><b>Acceptă până la sfârșitul sesiunii</b> – Permite acestui sait să "
+"stabilească cookie-uri care vor expira la sfârșitul sesiunii.</li>\n"
+"<li><b>Respinge</b> – Refuză toate cookie-urile trimise de la acest sait</"
+"li>\n"
+"<li><b>Întreabă</b> – Întreabă când sunt primite cookie-uri de la acest "
+"sait</li>\n"
+"</ul>\n"
+"</qt>"
 
 #. i18n: ectx: property (text), widget (QLabel, lbPolicy)
 #: cookies/kcookiespolicyselectiondlg.ui:56
-#, fuzzy, kde-format
-#| msgid "Policy"
+#, kde-format
 msgid "Policy:"
-msgstr "Politică"
+msgstr "Politică:"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, cbPolicy)
 #: cookies/kcookiespolicyselectiondlg.ui:81 domainlistview.cpp:192
@@ -816,7 +824,7 @@ msgstr "Acceptă"
 #: cookies/kcookiespolicyselectiondlg.ui:86
 #, kde-format
 msgid "Accept until end of session"
-msgstr ""
+msgstr "Acceptă până la sfârșitul sesiunii"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, cbPolicy)
 #: cookies/kcookiespolicyselectiondlg.ui:91 domainlistview.cpp:194
@@ -923,13 +931,13 @@ msgstr "Utilizează &stilul de accesibilitate"
 #: css/cssconfig.ui:146
 #, kde-format
 msgid "Custom&ize..."
-msgstr "&Personalizează..."
+msgstr "Personal&izează…"
 
 #. i18n: ectx: property (title), widget (QGroupBox, customPageBackgroundBox)
 #: css/cssconfig.ui:177
 #, kde-format
 msgid "Custom Page Background"
-msgstr ""
+msgstr "Fundal personalizat pentru pagină"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, useCustomBackgroundColor)
 #: css/cssconfig.ui:183
@@ -953,7 +961,7 @@ msgstr ""
 #: css/cssconfig.ui:186
 #, kde-format
 msgid "Use custom &background color"
-msgstr ""
+msgstr "Folosește culoare de fun&dal personalizată"
 
 #. i18n: ectx: property (toolTip), widget (KColorButton, customBackgroundColor)
 #: css/cssconfig.ui:196
@@ -989,7 +997,7 @@ msgstr ""
 #: css/cssconfig.ui:209
 #, kde-format
 msgid "Add custom background color to stylesheet"
-msgstr ""
+msgstr "Adaugă culoare de fundal personalizată la foaia de stil"
 
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, GroupBox7)
 #: css/csscustom.ui:21
@@ -1607,16 +1615,14 @@ msgstr ""
 "fiecare pe o linie separată."
 
 #: filteropts.cpp:256
-#, fuzzy, kde-format
-#| msgid "Automatic Filter"
+#, kde-format
 msgid "Import Filters"
-msgstr "Filtrare automată"
+msgstr "Importă filtre"
 
 #: filteropts.cpp:300
-#, fuzzy, kde-format
-#| msgid "URL Expressions to Filter"
+#, kde-format
 msgid "Export Filters"
-msgstr "Expresii URL de filtrat"
+msgstr "Exportă filtre"
 
 #. i18n: ectx: property (text), widget (QTreeWidget, templates)
 #: filteropts.cpp:563 useragent/useragent.ui:58
@@ -1635,13 +1641,13 @@ msgctxt ""
 "The user chose to use a custom start page but left the corresponding field "
 "empty"
 msgid "Please, insert the custom start page"
-msgstr ""
+msgstr "Introduceți pagina de pornire personalizată"
 
 #: generalopts.cpp:60
 #, kde-format
 msgctxt "@label:listbox"
 msgid "When a new &Tab is created"
-msgstr ""
+msgstr "Când e crea&tă o filă nouă"
 
 #: generalopts.cpp:69
 #, kde-format
@@ -1653,15 +1659,13 @@ msgstr "Afișează pagina introductivă"
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Show Speed Dial"
-msgstr ""
+msgstr "Arată apelarea rapidă"
 
 #: generalopts.cpp:71
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "Show My Home Page"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Show My Start Page"
-msgstr "Afișează pagina mea de pornire"
+msgstr "Arată pagina mea de pornire"
 
 #: generalopts.cpp:72
 #, kde-format
@@ -1676,9 +1680,7 @@ msgid "Show My Bookmarks"
 msgstr "Afișează semnele mele de carte"
 
 #: generalopts.cpp:79
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Select Home Page"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Start Page"
 msgstr "Alegeți pagina de pornire"
@@ -1687,6 +1689,7 @@ msgstr "Alegeți pagina de pornire"
 #, kde-format
 msgid "This is the URL of the web page Konqueror will show when starting."
 msgstr ""
+"Acesta este URL-ul paginii web pe care Konqueror o va arăta la pornire."
 
 #: generalopts.cpp:95
 #, kde-format
@@ -1722,22 +1725,22 @@ msgstr "Motorul implicit de navigare web:"
 #: generalopts.cpp:120
 #, kde-format
 msgid "When splitting a view"
-msgstr ""
+msgstr "La despărțirea vizualizării"
 
 #: generalopts.cpp:124
 #, kde-format
 msgid "Always duplicate current view"
-msgstr ""
+msgstr "Duplică mereu vizualizarea actuală"
 
 #: generalopts.cpp:125
 #, kde-format
 msgid "Duplicate current view only for local files"
-msgstr ""
+msgstr "Duplică vizualizarea actuală numai pentru fișiere locale"
 
 #: generalopts.cpp:131
 #, kde-format
 msgid "When starting up, restore state from last time"
-msgstr ""
+msgstr "La pornire, restabilește starea de data trecută"
 
 #: htmlopts.cpp:39
 #, kde-format
@@ -1895,11 +1898,13 @@ msgstr ""
 msgid ""
 "Uncheck this box to display online PDF files as configured in System Settings"
 msgstr ""
+"Debifați pentru a afișa documentele PDF din Internet după cum e stabilit în "
+"Configurări de Sistem"
 
 #: htmlopts.cpp:136
 #, kde-format
 msgid "Always display files from web pages in a new tab"
-msgstr ""
+msgstr "Afișează mereu fișierele din pagini web în filă nouă"
 
 #: htmlopts.cpp:137
 #, kde-format
@@ -2017,7 +2022,7 @@ msgstr "Permite"
 #: jspolicies.cpp:177
 #, kde-format
 msgid "Accept all popup window requests."
-msgstr "Acceptă toate cererile de ferestre popup."
+msgstr "Acceptă toate cererile de ferestre contextuale."
 
 #: jspolicies.cpp:183
 #, kde-format
@@ -2226,16 +2231,15 @@ msgstr "Mai întîi trebuie să introduceți un nume de domeniu."
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, TabsOptions)
 #: tabs/tabsoptions.ui:14
-#, fuzzy, kde-format
-#| msgid "Mouse Beha&vior"
+#, kde-format
 msgid "Tabs Behavior"
-msgstr "&Comportament maus"
+msgstr "Comportamentul filelor"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
 #: tabs/tabsoptions.ui:20
 #, kde-format
 msgid "Aspect"
-msgstr ""
+msgstr "Aspect"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, m_pDynamicTabbarHide)
 #: tabs/tabsoptions.ui:26
@@ -2257,43 +2261,43 @@ msgstr "Ascunde bara de file atunci cînd există numai o filă"
 #: tabs/tabsoptions.ui:38
 #, kde-format
 msgid "Tab bar position"
-msgstr ""
+msgstr "Poziția barei de file"
 
 #. i18n: ectx: property (whatsThis), widget (QComboBox, tabbarPosition)
 #: tabs/tabsoptions.ui:48
 #, kde-format
 msgid "Choose where to display the tabs bar"
-msgstr ""
+msgstr "Alegeți unde să fie afișată bara de file"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, tabbarPosition)
 #: tabs/tabsoptions.ui:52
 #, kde-format
 msgid "Above contents"
-msgstr ""
+msgstr "Deasupra conținutului"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, tabbarPosition)
 #: tabs/tabsoptions.ui:57
 #, kde-format
 msgid "Below contents"
-msgstr ""
+msgstr "Sub conținut"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, tabbarPosition)
 #: tabs/tabsoptions.ui:62
 #, kde-format
 msgid "Left of contents"
-msgstr ""
+msgstr "La stânga conținutului"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, tabbarPosition)
 #: tabs/tabsoptions.ui:67
 #, kde-format
 msgid "Right of contents"
-msgstr ""
+msgstr "La dreapta conținutului"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: tabs/tabsoptions.ui:93
 #, kde-format
 msgid "Usage"
-msgstr ""
+msgstr "Utilizare"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, m_pShowMMBInTabs)
 #: tabs/tabsoptions.ui:99
@@ -2351,10 +2355,9 @@ msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #: tabs/tabsoptions.ui:132
-#, fuzzy, kde-format
-#| msgid "Mouse Beha&vior"
+#, kde-format
 msgid "New Tab Behavior"
-msgstr "&Comportament maus"
+msgstr "Comportamentul filelor noi"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, m_pNewTabsInBackground)
 #: tabs/tabsoptions.ui:138
@@ -2370,11 +2373,14 @@ msgstr ""
 #: tabs/tabsoptions.ui:141
 #, kde-format
 msgid "O&pen new tabs in the background"
-msgstr "D&eschide fila în fundal"
+msgstr "D&eschide filele noi în fundal"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, m_pOpenAfterCurrentPage)
 #: tabs/tabsoptions.ui:148
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "This will open a new tab opened from a page after the current tab, "
+#| "instead of after the last tab."
 msgid ""
 "This will open a new tab opened from a page after the current tab, instead "
 "of after the last tab."
@@ -2384,13 +2390,13 @@ msgstr "Va fi deschisă o filă nouă dintr-o pagină, după fila curentă."
 #: tabs/tabsoptions.ui:151
 #, kde-format
 msgid "Open &new tab after current tab"
-msgstr "Deschide o filă &nouă după fila curentă"
+msgstr "Deschide fila &nouă după fila curentă"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
 #: tabs/tabsoptions.ui:161
 #, kde-format
 msgid "Closing"
-msgstr ""
+msgstr "Închidere"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, m_pPermanentCloseButton)
 #: tabs/tabsoptions.ui:167
@@ -2402,7 +2408,7 @@ msgstr "Aceasta va determina afișarea butoanelor de închidere în fiecare fil�
 #: tabs/tabsoptions.ui:170
 #, kde-format
 msgid "&Show close button on tabs"
-msgstr "&Afișează butonul de închidere pe file"
+msgstr "&Arată butonul de închidere pe file"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, m_pMiddleClickClose)
 #: tabs/tabsoptions.ui:177
@@ -2411,8 +2417,8 @@ msgid ""
 "When you click on a tab using the middle mouse button or mouse wheel, it "
 "will close that tab."
 msgstr ""
-"Cînd faceți clic pe o filă cu butonul din mijloc al mausului sau cu rotița "
-"lui, fila se va închide."
+"Când apăsați pe o filă cu butonul din mijloc al mausului sau cu rotița lui, "
+"aceasta se va închide."
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_pMiddleClickClose)
 #: tabs/tabsoptions.ui:180
@@ -2458,23 +2464,23 @@ msgstr "Activează fila utilizată anterior atunci cînd închideți fila curent
 msgctxt ""
 "@title:window Title of dialog to choose name to given to new User Agent"
 msgid "Choose User Agent name"
-msgstr ""
+msgstr "Alege alt nume de agent al utilizatorului"
 
 #: useragent/useragent.cpp:196
 #, kde-format
 msgctxt "Name of the new User Agent"
 msgid "User Agent name"
-msgstr ""
+msgstr "Numele agentului utilizatorului"
 
 #: useragent/useragent.cpp:256
 #, kde-format
 msgid "there are templates with empty names"
-msgstr ""
+msgstr "sunt șabloane cu denumiri goale"
 
 #: useragent/useragent.cpp:261
 #, kde-format
 msgid "there are multiple templates with the same name"
-msgstr ""
+msgstr "sunt multiple șabloane cu aceeași denumire"
 
 #: useragent/useragent.cpp:284
 #, kde-format
@@ -2486,7 +2492,7 @@ msgstr ""
 #: useragent/useragent.ui:20
 #, kde-format
 msgid "Existing identifications"
-msgstr ""
+msgstr "Identificări existente"
 
 #. i18n: ectx: property (toolTip), widget (QTreeWidget, templates)
 #. i18n: ectx: property (toolTip), widget (QPushButton, newTemplateBtn)
@@ -2495,37 +2501,35 @@ msgstr ""
 #: useragent/useragent.ui:147
 #, kde-format
 msgid "<html><head/><body><p><br/></p></body></html>"
-msgstr ""
+msgstr "<html><head/><body><p><br/></p></body></html>"
 
 #. i18n: ectx: property (text), widget (QTreeWidget, templates)
 #: useragent/useragent.ui:63
 #, kde-format
 msgid "Content"
-msgstr ""
+msgstr "Conținut"
 
 #. i18n: ectx: property (text), widget (QPushButton, editTemplateBtn)
 #: useragent/useragent.ui:94
-#, fuzzy, kde-format
-#| msgid "&Export..."
+#, kde-format
 msgid "&Edit..."
-msgstr "&Exportă..."
+msgstr "&Modifică…"
 
 #. i18n: ectx: property (text), widget (QPushButton, renameTemplateBtn)
 #: useragent/useragent.ui:107
 #, kde-format
 msgid "&Rename..."
-msgstr ""
+msgstr "&Redenumește…"
 
 #. i18n: ectx: property (text), widget (QPushButton, duplicateTemplateBtn)
 #: useragent/useragent.ui:120
 #, kde-format
 msgid "Du&plicate..."
-msgstr ""
+msgstr "Du&plică…"
 
 #. i18n: ectx: property (text), widget (QPushButton, deleteTemplateBtn)
 #: useragent/useragent.ui:133
-#, fuzzy, kde-format
-#| msgid "De&lete"
+#, kde-format
 msgid "&Delete"
 msgstr "Ș&terge"
 
@@ -2547,13 +2551,13 @@ msgstr ""
 #: useragent/useragent.ui:163
 #, kde-format
 msgid "Use &default identification"
-msgstr ""
+msgstr "Folosește i&dentificarea implicită"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: useragent/useragent.ui:178
 #, kde-format
 msgid "&Custom identification"
-msgstr ""
+msgstr "Identifi&care personalizată"
 
 #. i18n: ectx: property (toolTip), widget (QLineEdit, userAgentString)
 #: useragent/useragent.ui:188
