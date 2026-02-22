@@ -136,23 +136,12 @@ void WebEnginePartApiTest::shouldEmitSetWindowCaption()
     QCOMPARE(spySetWindowCaption.at(1).at(0).toUrl().toString(), QStringLiteral("Custom Title"));
 }
 
-// Taken from QtWebEngine's tst_qwebenginepage.cpp
-static QPoint elementCenter(QWebEnginePage *page, const QString &id)
+//TODO This is a simplified version of the ViewMgrTest::simulateClick() in konqviewmgrtest.
+//Is there a way to reuse the code instead of duplicating it? Maybe a test helper library?
+void simulateClick(WebEnginePart* part)
 {
-    QVariantList rectList = evaluateJavaScriptSync(page,
-            "(function(){"
-            "var elem = document.getElementById('" + id + "');"
-            "var rect = elem.getBoundingClientRect();"
-            "return [rect.left, rect.top, rect.right - rect.left, rect.bottom - rect.top];"
-            "})()").toList();
-
-    if (rectList.count() != 4) {
-        qWarning("elementCenter failed.");
-        return QPoint();
-    }
-    const QRect rect(rectList.at(0).toInt(), rectList.at(1).toInt(),
-                     rectList.at(2).toInt(), rectList.at(3).toInt());
-    return rect.center();
+    QString js = QStringLiteral("simulateClick('linkid')");
+    part->view()->page()->runJavaScript(js);
 }
 
 void WebEnginePartApiTest::shouldEmitOpenUrlNotifyOnClick()
@@ -162,7 +151,7 @@ void WebEnginePartApiTest::shouldEmitOpenUrlNotifyOnClick()
     TestBrowserInterface *iface = new TestBrowserInterface(this);
     part.browserExtension()->setBrowserInterface(iface);
     QSignalSpy spyStarted(&part, &KParts::ReadOnlyPart::started);
-    QSignalSpy spyCompleted(&part, SIGNAL(completed()));
+    QSignalSpy spyCompleted(&part, &KParts::ReadOnlyPart::completed);
     QSignalSpy spySetWindowCaption(&part, &KParts::ReadOnlyPart::setWindowCaption);
     KParts::NavigationExtension *ext = KParts::NavigationExtension::childObject(&part);
     QSignalSpy spyOpenUrlNotify(ext, &KParts::NavigationExtension::openUrlNotify);
@@ -172,12 +161,10 @@ void WebEnginePartApiTest::shouldEmitOpenUrlNotifyOnClick()
     part.openUrl(url);
     QVERIFY(spyCompleted.wait());
     QVERIFY(spyOpenUrlNotify.isEmpty());
-    QWebEnginePage *page = part.view()->page();
-    const QPoint pos = elementCenter(page, QStringLiteral("linkid")); // doesn't seem fully correct...
     spyCompleted.clear();
 
-    // WHEN clicking on the link
-    QTest::mouseClick(part.view()->focusProxy(), Qt::LeftButton, Qt::KeyboardModifiers(), pos);
+    //WHEN clicking on the link
+    simulateClick(&part);
 
     // THEN
     QVERIFY(spyCompleted.wait());

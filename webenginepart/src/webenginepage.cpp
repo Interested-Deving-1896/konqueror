@@ -300,7 +300,7 @@ bool WebEnginePage::shouldOpenUrl(const QUrl& url) const
 
     KonqInterfaces::Browser *iface = KonqInterfaces::Browser::browser(qApp);
     if (!iface) {
-        qCDebug(WEBENGINEPART_LOG) << "Konqueror application should provide BrowserInterface but it doesn't";
+        qCDebug(WEBENGINEPART_LOG) << "Konqueror application should provide KonqInterfaces::Browser interface but it doesn't";
         return true;
     }
     QMimeDatabase db;

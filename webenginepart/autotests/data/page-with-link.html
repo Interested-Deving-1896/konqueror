@@ -1,1 +1,21 @@
-<a href="hello.html" id="linkid">click me</a>
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+function simulateClick(id) {
+  const ev = new MouseEvent('click', {
+    bubbles: true,
+    cancelable: true
+  });
+
+  const element = document.getElementById(id);
+  element.dispatchEvent(ev);
+}
+
+</script>
+</head>
+<body>
+<a href="hello.html" id="linkid">Click me</a>
+</body>
+</html>
