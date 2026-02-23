@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-12 00:43+0000\n"
+"POT-Creation-Date: 2026-02-23 00:44+0000\n"
 "PO-Revision-Date: 2025-12-03 16:50+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -1055,7 +1055,7 @@ msgstr "حدث خطأ أثناء تحويل الصفحة إلى بي دي اف"
 msgid "An error occurred while saving a PDF version of the page as %1"
 msgstr "حدث خطأ أثناء حفظ إصدارة بي دي اف من الصفحة كـ %1"
 
-#: src/webenginepage.cpp:880
+#: src/webenginepage.cpp:888
 #, kde-format
 msgid ""
 "This site is requesting to open a new popup window.\n"
@@ -1064,7 +1064,7 @@ msgstr ""
 "يطلب هذا الموقع أن يفتح نافذة منبثقة جديدة.\n"
 "هل تريد السماح بذلك؟"
 
-#: src/webenginepage.cpp:882
+#: src/webenginepage.cpp:890
 #, kde-format
 msgid ""
 "<qt>This site is requesting to open a popup window to<p>%1</p><br/>Do you "
@@ -1073,17 +1073,17 @@ msgstr ""
 "<qt> لـ<p>%1</p><br/> يطلب هذا الموقع أن يفتح نافذة منبثقة\n"
 "هل تريد السماح بذلك؟</qt>"
 
-#: src/webenginepage.cpp:885
+#: src/webenginepage.cpp:893
 #, kde-format
 msgid "Javascript Popup Confirmation"
 msgstr "تأكيد نافذة منبثقة من نوع جافاسكربت"
 
-#: src/webenginepage.cpp:886
+#: src/webenginepage.cpp:894
 #, kde-format
 msgid "Allow"
 msgstr "اسمح"
 
-#: src/webenginepage.cpp:886
+#: src/webenginepage.cpp:894
 #, kde-format
 msgid "Do Not Allow"
 msgstr "لا تسمح"

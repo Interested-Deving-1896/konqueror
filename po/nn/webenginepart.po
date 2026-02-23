@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-12 00:43+0000\n"
+"POT-Creation-Date: 2026-02-23 00:44+0000\n"
 "PO-Revision-Date: 2021-01-16 15:33+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
@@ -1060,7 +1060,7 @@ msgstr "Det oppstod ein feil ved lagring av fila: %1"
 msgid "An error occurred while saving a PDF version of the page as %1"
 msgstr "Det oppstod ein feil ved lagring av fila: %1"
 
-#: src/webenginepage.cpp:880
+#: src/webenginepage.cpp:888
 #, kde-format
 msgid ""
 "This site is requesting to open a new popup window.\n"
@@ -1069,7 +1069,7 @@ msgstr ""
 "Nettsida ønskjer å opna eit sprettoppvindauge.\n"
 "Vil du tillata dette?"
 
-#: src/webenginepage.cpp:882
+#: src/webenginepage.cpp:890
 #, kde-format
 msgid ""
 "<qt>This site is requesting to open a popup window to<p>%1</p><br/>Do you "
@@ -1078,17 +1078,17 @@ msgstr ""
 "<qt>Nettsida ønskjer å visa eit sprettoppvindauge til<p>%1</p><br/>Vil du "
 "tillata dette?</qt>"
 
-#: src/webenginepage.cpp:885
+#: src/webenginepage.cpp:893
 #, kde-format
 msgid "Javascript Popup Confirmation"
 msgstr "Stadfesting av sprettoppvindauge"
 
-#: src/webenginepage.cpp:886
+#: src/webenginepage.cpp:894
 #, kde-format
 msgid "Allow"
 msgstr "Tillat"
 
-#: src/webenginepage.cpp:886
+#: src/webenginepage.cpp:894
 #, kde-format
 msgid "Do Not Allow"
 msgstr "Ikkje tillat"

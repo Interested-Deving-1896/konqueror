@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-12 00:43+0000\n"
+"POT-Creation-Date: 2026-02-23 00:44+0000\n"
 "PO-Revision-Date: 2024-11-08 14:57+0000\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
 "Language-Team: British English\n"
@@ -1080,7 +1080,7 @@ msgstr "An error occurred while saving the file: %1"
 msgid "An error occurred while saving a PDF version of the page as %1"
 msgstr "An error occurred while saving the file: %1"
 
-#: src/webenginepage.cpp:880
+#: src/webenginepage.cpp:888
 #, kde-format
 msgid ""
 "This site is requesting to open a new popup window.\n"
@@ -1089,7 +1089,7 @@ msgstr ""
 "This site is requesting to open a new popup window.\n"
 "Do you want to allow this?"
 
-#: src/webenginepage.cpp:882
+#: src/webenginepage.cpp:890
 #, kde-format
 msgid ""
 "<qt>This site is requesting to open a popup window to<p>%1</p><br/>Do you "
@@ -1098,17 +1098,17 @@ msgstr ""
 "<qt>This site is requesting to open a popup window to<p>%1</p><br/>Do you "
 "want to allow this?</qt>"
 
-#: src/webenginepage.cpp:885
+#: src/webenginepage.cpp:893
 #, kde-format
 msgid "Javascript Popup Confirmation"
 msgstr "Javascript Popup Confirmation"
 
-#: src/webenginepage.cpp:886
+#: src/webenginepage.cpp:894
 #, kde-format
 msgid "Allow"
 msgstr "Allow"
 
-#: src/webenginepage.cpp:886
+#: src/webenginepage.cpp:894
 #, kde-format
 msgid "Do Not Allow"
 msgstr "Do Not Allow"

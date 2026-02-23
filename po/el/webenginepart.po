@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: webkitkde\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-12 00:43+0000\n"
+"POT-Creation-Date: 2026-02-23 00:44+0000\n"
 "PO-Revision-Date: 2023-01-07 10:35+0200\n"
 "Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -1102,7 +1102,7 @@ msgstr "Παρουσιάστηκε σφάλμα κατά την αποθήκευ
 msgid "An error occurred while saving a PDF version of the page as %1"
 msgstr "Παρουσιάστηκε σφάλμα κατά την αποθήκευση του αρχείου: %1"
 
-#: src/webenginepage.cpp:880
+#: src/webenginepage.cpp:888
 #, kde-format
 msgid ""
 "This site is requesting to open a new popup window.\n"
@@ -1111,7 +1111,7 @@ msgstr ""
 "Αυτός ο ιστότοπος ζητάει να ανοίξει ένα νέο αναδυόμενο παράθυρο.\n"
 "Θα το επιτρέψετε αυτό;"
 
-#: src/webenginepage.cpp:882
+#: src/webenginepage.cpp:890
 #, kde-format
 msgid ""
 "<qt>This site is requesting to open a popup window to<p>%1</p><br/>Do you "
@@ -1120,17 +1120,17 @@ msgstr ""
 "<qt>Αυτός ο ιστότοπος ζητάει να ανοίξει ένα αναδυόμενο παράθυρο στο<p>%1</"
 "p><br/>Θα το επιτρέψετε αυτό;</qt>"
 
-#: src/webenginepage.cpp:885
+#: src/webenginepage.cpp:893
 #, kde-format
 msgid "Javascript Popup Confirmation"
 msgstr "Επιβεβαίωση ανάδυσης Javascript"
 
-#: src/webenginepage.cpp:886
+#: src/webenginepage.cpp:894
 #, kde-format
 msgid "Allow"
 msgstr "Να επιτρέπεται"
 
-#: src/webenginepage.cpp:886
+#: src/webenginepage.cpp:894
 #, kde-format
 msgid "Do Not Allow"
 msgstr "Να μην επιτρέπεται"

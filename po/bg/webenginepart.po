@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwebkitpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-12 00:43+0000\n"
+"POT-Creation-Date: 2026-02-23 00:44+0000\n"
 "PO-Revision-Date: 2025-12-04 17:40+0100\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
@@ -1080,7 +1080,7 @@ msgstr "Възникна грешка при конвертирането на �
 msgid "An error occurred while saving a PDF version of the page as %1"
 msgstr "Възникна грешка при запазване на PDF версия на страницата като %1"
 
-#: src/webenginepage.cpp:880
+#: src/webenginepage.cpp:888
 #, kde-format
 msgid ""
 "This site is requesting to open a new popup window.\n"
@@ -1089,7 +1089,7 @@ msgstr ""
 "Този сайт иска да отвори нов изскачащ прозорец.\n"
 "Искате ли да разрешите това?"
 
-#: src/webenginepage.cpp:882
+#: src/webenginepage.cpp:890
 #, kde-format
 msgid ""
 "<qt>This site is requesting to open a popup window to<p>%1</p><br/>Do you "
@@ -1098,17 +1098,17 @@ msgstr ""
 "<qt>Този сайт иска да отвори изскачащ прозорец в <p>%1</p><br/> Наистина ли "
 "искате да разрешите това?</qt>"
 
-#: src/webenginepage.cpp:885
+#: src/webenginepage.cpp:893
 #, kde-format
 msgid "Javascript Popup Confirmation"
 msgstr "Потвърждение за изскачащ прозорец на Javascript"
 
-#: src/webenginepage.cpp:886
+#: src/webenginepage.cpp:894
 #, kde-format
 msgid "Allow"
 msgstr "Разрешаване"
 
-#: src/webenginepage.cpp:886
+#: src/webenginepage.cpp:894
 #, kde-format
 msgid "Do Not Allow"
 msgstr "Забраняване"

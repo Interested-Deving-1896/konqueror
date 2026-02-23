@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-12 00:43+0000\n"
+"POT-Creation-Date: 2026-02-23 00:44+0000\n"
 "PO-Revision-Date: 2012-02-29 00:24+0330\n"
 "Last-Translator: Mohammad Reza Mirdamadi <mohi@ubuntu.ir>\n"
 "Language-Team: Farsi (Persian) <kde-i18n-fa@kde.org>\n"
@@ -1016,7 +1016,7 @@ msgstr ""
 msgid "An error occurred while saving a PDF version of the page as %1"
 msgstr ""
 
-#: src/webenginepage.cpp:880
+#: src/webenginepage.cpp:888
 #, fuzzy, kde-format
 #| msgid ""
 #| "This site is attempting to submit form data via email.\n"
@@ -1028,7 +1028,7 @@ msgstr ""
 "این پایگاه تلاش می‌کند، داده‌ها را از طریق رایانامه ارائه کند.\n"
 "می‌خواهید ادامه دهید؟"
 
-#: src/webenginepage.cpp:882
+#: src/webenginepage.cpp:890
 #, fuzzy, kde-format
 msgid ""
 "<qt>This site is requesting to open a popup window to<p>%1</p><br/>Do you "
@@ -1037,19 +1037,19 @@ msgstr ""
 "<qt>این صفحه غیرقابل اعتماد به <br /><b>%1</b> می‌پیوندد.<br />آیا می‌خواهید "
 "پیوند را ادامه دهید؟</qt>"
 
-#: src/webenginepage.cpp:885
+#: src/webenginepage.cpp:893
 #, kde-format
 msgid "Javascript Popup Confirmation"
 msgstr ""
 
-#: src/webenginepage.cpp:886
+#: src/webenginepage.cpp:894
 #, fuzzy, kde-format
 #| msgctxt "follow link despite of security warning"
 #| msgid "Follow"
 msgid "Allow"
 msgstr "دنبال کردن"
 
-#: src/webenginepage.cpp:886
+#: src/webenginepage.cpp:894
 #, kde-format
 msgid "Do Not Allow"
 msgstr ""

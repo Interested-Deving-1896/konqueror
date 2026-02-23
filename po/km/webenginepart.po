@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwebkitpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-12 00:43+0000\n"
+"POT-Creation-Date: 2026-02-23 00:44+0000\n"
 "PO-Revision-Date: 2012-07-09 11:08+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -1067,7 +1067,7 @@ msgstr ""
 msgid "An error occurred while saving a PDF version of the page as %1"
 msgstr ""
 
-#: src/webenginepage.cpp:880
+#: src/webenginepage.cpp:888
 #, fuzzy, kde-format
 #| msgid ""
 #| "This site is requesting to open up a popup window.\n"
@@ -1079,7 +1079,7 @@ msgstr ""
 "តំបន់បណ្ដាញ​​កំពុង​ស្នើ​ឲ្យ​បើក​បង្អួច​លេចឡើង ។\n"
 "តើ​អ្នក​អនុញ្ញាត​ដែរ​ឬទេ ?"
 
-#: src/webenginepage.cpp:882
+#: src/webenginepage.cpp:890
 #, kde-format
 msgid ""
 "<qt>This site is requesting to open a popup window to<p>%1</p><br/>Do you "
@@ -1087,17 +1087,17 @@ msgid ""
 msgstr ""
 "<qt>តំបន់បណ្ដាញ​​កំពុង​ស្នើ​ឲ្យ​បើក​បង្អួច​លេចឡើង​ទៅកាន់<p>%1</p><br/>តើ​អ្នក​អនុញ្ញាត​ដែរ​ឬទេ ?</qt>"
 
-#: src/webenginepage.cpp:885
+#: src/webenginepage.cpp:893
 #, kde-format
 msgid "Javascript Popup Confirmation"
 msgstr "ការ​អះអាង​ការ​លេចឡើង​របស់ Javascript"
 
-#: src/webenginepage.cpp:886
+#: src/webenginepage.cpp:894
 #, kde-format
 msgid "Allow"
 msgstr "អនុញ្ញាត"
 
-#: src/webenginepage.cpp:886
+#: src/webenginepage.cpp:894
 #, kde-format
 msgid "Do Not Allow"
 msgstr "កុំ​អនុញ្ញាត"

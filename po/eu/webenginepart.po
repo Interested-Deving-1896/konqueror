@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konqueror\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-12 00:43+0000\n"
+"POT-Creation-Date: 2026-02-23 00:44+0000\n"
 "PO-Revision-Date: 2025-12-07 19:54+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -1073,7 +1073,7 @@ msgstr "Errore bat gertatu da, orrialdea PDF bihurtzerakoan"
 msgid "An error occurred while saving a PDF version of the page as %1"
 msgstr "Errore bat gertatu da, orrialdearen PDF bertsio bat %1 gisa gordetzean"
 
-#: src/webenginepage.cpp:880
+#: src/webenginepage.cpp:888
 #, kde-format
 msgid ""
 "This site is requesting to open a new popup window.\n"
@@ -1082,7 +1082,7 @@ msgstr ""
 "Leku hau leiho-gainerakor berri bat irekitzea eskatzen ari da.\n"
 "Hori egiten utzi nahi duzu?"
 
-#: src/webenginepage.cpp:882
+#: src/webenginepage.cpp:890
 #, kde-format
 msgid ""
 "<qt>This site is requesting to open a popup window to<p>%1</p><br/>Do you "
@@ -1091,17 +1091,17 @@ msgstr ""
 "<qt>Leku hau<p>%1</p>-(e)ra leiho-gainerakor bat irekitzea eskatzen ari da."
 "<br/>Hori egiten utzi nahi duzu?</qt>"
 
-#: src/webenginepage.cpp:885
+#: src/webenginepage.cpp:893
 #, kde-format
 msgid "Javascript Popup Confirmation"
 msgstr "Javascript leiho-gainerakorren berrespena"
 
-#: src/webenginepage.cpp:886
+#: src/webenginepage.cpp:894
 #, kde-format
 msgid "Allow"
 msgstr "Baimendu"
 
-#: src/webenginepage.cpp:886
+#: src/webenginepage.cpp:894
 #, kde-format
 msgid "Do Not Allow"
 msgstr "Ez baimendu"

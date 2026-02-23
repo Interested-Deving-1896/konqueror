@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konqueror\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-12 00:43+0000\n"
+"POT-Creation-Date: 2026-02-23 00:44+0000\n"
 "PO-Revision-Date: 2024-12-25 19:45+0530\n"
 "Last-Translator: kali <shreekantkalwar@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -1071,7 +1071,7 @@ msgstr "सञ्चिकां रक्षन् त्रुटिः अभ
 msgid "An error occurred while saving a PDF version of the page as %1"
 msgstr "सञ्चिकां रक्षन् त्रुटिः अभवत्: %1"
 
-#: src/webenginepage.cpp:880
+#: src/webenginepage.cpp:888
 #, kde-format
 msgid ""
 "This site is requesting to open a new popup window.\n"
@@ -1080,7 +1080,7 @@ msgstr ""
 "एषा साइट् नूतनं पॉपअप विण्डो उद्घाटयितुं अनुरोधं करोति ।\n"
 "किं भवन्तः एतत् अनुमन्यन्ते ?"
 
-#: src/webenginepage.cpp:882
+#: src/webenginepage.cpp:890
 #, kde-format
 msgid ""
 "<qt>This site is requesting to open a popup window to<p>%1</p><br/>Do you "
@@ -1089,17 +1089,17 @@ msgstr ""
 "<qt>एषा साइट् एकं पॉपअप विण्डो उद्घाटयितुं अनुरोधं करोति यत्...<p> %1</p><br/> किं "
 "भवन्तः एतत् अनुमन्यन्ते ?</qt>"
 
-#: src/webenginepage.cpp:885
+#: src/webenginepage.cpp:893
 #, kde-format
 msgid "Javascript Popup Confirmation"
 msgstr "जावास्क्रिप्ट पॉपअप पुष्टिः"
 
-#: src/webenginepage.cpp:886
+#: src/webenginepage.cpp:894
 #, kde-format
 msgid "Allow"
 msgstr "अनुमन्यताम्‌"
 
-#: src/webenginepage.cpp:886
+#: src/webenginepage.cpp:894
 #, kde-format
 msgid "Do Not Allow"
 msgstr "न अनुमन्यताम्"

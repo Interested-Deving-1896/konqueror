@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konqueror\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-12 00:43+0000\n"
+"POT-Creation-Date: 2026-02-23 00:44+0000\n"
 "PO-Revision-Date: 2021-09-15 20:37+0630\n"
 "Last-Translator: \n"
 "Language-Team: Burmese <kde-i18n-doc@kde.org>\n"
@@ -1008,31 +1008,31 @@ msgstr "'%1'ရယူအသုံးပြုနေစဥ် အမှားဖ�
 msgid "An error occurred while saving a PDF version of the page as %1"
 msgstr "'%1'ရယူအသုံးပြုနေစဥ် အမှားဖြစ်ပေါ်ခဲ့သည်"
 
-#: src/webenginepage.cpp:880
+#: src/webenginepage.cpp:888
 #, kde-format
 msgid ""
 "This site is requesting to open a new popup window.\n"
 "Do you want to allow this?"
 msgstr ""
 
-#: src/webenginepage.cpp:882
+#: src/webenginepage.cpp:890
 #, kde-format
 msgid ""
 "<qt>This site is requesting to open a popup window to<p>%1</p><br/>Do you "
 "want to allow this?</qt>"
 msgstr ""
 
-#: src/webenginepage.cpp:885
+#: src/webenginepage.cpp:893
 #, fuzzy, kde-format
 msgid "Javascript Popup Confirmation"
 msgstr "ဂျာဗားစခရစ်"
 
-#: src/webenginepage.cpp:886
+#: src/webenginepage.cpp:894
 #, kde-format
 msgid "Allow"
 msgstr "ခွင့်ပြုမည်"
 
-#: src/webenginepage.cpp:886
+#: src/webenginepage.cpp:894
 #, fuzzy, kde-format
 msgid "Do Not Allow"
 msgstr "ခွင့်ပြုမည်"
